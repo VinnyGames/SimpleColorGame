@@ -33,7 +33,6 @@ Game.prototype =
 					else
 					{
 						topPanelDiv.textContent = "Игра действует без сохранения прогресса (авторизуйтесь на yandex.ru)";
-						this.GameRegime.ShowNoHaveOnlineDialog();
 					}
 
 					// Если игра запущена в первый раз
