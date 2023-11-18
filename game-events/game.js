@@ -1,10 +1,7 @@
 // Загрузка данных, обработка нажатий клавиш
 var Game = function()
 {
-	this.GameRegime = new GameRegime(this);
-	this.setGameSpeed(0);
-	this.GameCycleNumber    = 0;
-	this.GameSubCycleNumber = 0;
+	// this.GameRegime = new GameRegime(this);
 };
 
 Game.prototype =
@@ -45,7 +42,6 @@ Game.prototype =
 					this.SetPlayerDataIfNotSet({  scale:             1.0   },  0, true);
 					this.SetPlayerDataIfNotSet({  education_g:       false },  0, true);
 
-					AC2(this.Repaint, this);
 					this.AddEventListeners();
 
 					// На всякий случай ставим фокус на canvas, чтобы нормально обрабатывались все клавиши
