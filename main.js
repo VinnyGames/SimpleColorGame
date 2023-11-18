@@ -82,7 +82,7 @@ window.onload = function()
 		alert(errMsg);
 
 		// TODO: Это надо убрать из релиза игры
-		// game.LoadGame();
+		game.LoadGame();
 	}
 };
 
