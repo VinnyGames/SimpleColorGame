@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- https://yandex.ru/games/play/173037?draft=true -->
+	<!-- https://yandex.ru/dev/games/doc/dg/sdk/sdk-player.html -->
+
+	<meta charset="UTF-8">
+	<!-- script src="https://yandex.ru/games/sdk/v2"></script -->
+
+	<title>Простое освоение планет</title>
+</head>
+
+<body style="width: 100%; height: 100%; margin: 0px 0px 0px 0px; background-color: black; color: white; text-align: center; vertical-align: middle; cursor: default;">
+<!-- https://developer.mozilla.org/ru/docs/Web/API/Canvas_API/Tutorial -->
+<div id=loadProgress>Загрузка игры: пока не началась</div>
+<div id=topPanel  style="position: fixed; top: 0; left: 0; width: 100%; owerflow: auto; background-color: black; display: none; z-index: 2"></div>
+<div id=leftPanel style="position: fixed; top: 0; left: 0; height: 100%; owerflow: auto; background-color: black; display: none; z-index: 1">
+<div id=leftPanelPadding></div><div id=leftPanelText></div></div>
+
+<!-- outline - граница, которая показывается, когда на элементе стоит фокус. Это дополнительно создаёт неожиданные рамки -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/cursor либо crosshair, либо default -->
+<div id=main style="border: none; outline: none; cursor: default; position: absolute;">
+</div>
+
+	<SCRIPT src="main.js" type="text/javascript"></SCRIPT>
+	<SCRIPT src="loader/yandex_player.js"                type="text/javascript"></SCRIPT>
+	<SCRIPT src="loader/mainWindow.js"                   type="text/javascript"></SCRIPT>
+    <SCRIPT src="game-events/game.js"                    type="text/javascript"></SCRIPT>
+    <SCRIPT src="game-events/game_events.js"             type="text/javascript"></SCRIPT>
+    <SCRIPT src="game-events/game_events_keys.js"        type="text/javascript"></SCRIPT>
+
+</body>
+
+</html>
